@@ -16,6 +16,30 @@ public class Wipro1 {
         int number = 3;
         System.out.println("Square of " + number + " is: " + square(number));
         System.out.println("Factorial of " + number + " is: " + factorial(number));
+
+
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += arr[i];
+        }
+        System.out.println("Sum of all numbers: " + sum);
+
+
+        int max = arr[0];
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println("Maximum number: " + max);
+
+
+        System.out.print("Odd numbers in the array: ");
+        for (int i = 0; i < n; i++) {
+            if (arr[i] % 2 != 0) {
+                System.out.print(arr[i] + " ");
+            }
+        }
     }
 
     public static void findDuplicateElements(int arr[]) {
